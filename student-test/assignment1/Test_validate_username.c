@@ -24,5 +24,6 @@ void test_validate_my_username()
     maloc_username = malloc_username_from_conf_file();
 
     TEST_ASSERT_EQUAL_STRING_MESSAGE(hc_username, maloc_username,"failusername");
+    free(maloc_username);
 
 }
